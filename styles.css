@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: darkgray;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+#container {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  margin: 0 20px;
+  position: relative;
+}
+#MyVideo,
+#MyImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+#MyImage {
+  z-index: 2;
+}
+#MyVideo {
+  z-index: 5;
+}
+.button {
+  background-color: #adacac00;
+  border: none;
+  color: white;
+  padding: 7vw 18vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  top: 45%;
+  left: 50%;
+}
